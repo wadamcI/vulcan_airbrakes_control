@@ -1,0 +1,15 @@
+N220DM_parameters={
+    # Propulsion Details
+    "impulse": r"data/AeroTech_N2220DM.eng",
+    "dry_mass": (11.997 - 7.183),
+    "burn_time": (5.4, 1),
+    "dry_inertia":(0.4, 0.4, 0.02),
+    "nozzle_radius": (2.737*0.0254 /2, 0.5 / 1000),
+    "grain_number": (6)
+    "throat_radius": (1*0.0254 /2, 0.5 / 1000),
+    "grain_separation": (2 / 1000, 1 / 1000),
+    "grain_density": (1696, 50),
+    "grain_outer_radius": (3.365*0.0254 /2, 0.375 / 1000),
+    "grain_initial_inner_radius": (3.270*0.0254 /2, 0.375 / 1000), #check
+    "grain_initial_height": ((1046 / 1000) / 6, 1 / 1000), #check
+}

@@ -1,0 +1,28 @@
+Vulcan_parameters = {
+    # Mass Details
+    "rocket_mass": (81.19 * 0.453592, 0.001),
+    # Aerodynamic Details
+    "inertia_I": (#calculate, 0.03675),
+    "inertia_Z": (#estimate, 0.00007), #maybe more inertia tensors
+    "radius": (3.085 * 2.54 / 100, 0.001),
+    "distance_rocket_nozzle": (#measure, 0.001),
+    "distance_rocket_propellant": (#measure, 0.001),
+    "power_off_drag": r"data/power_off_drag.CSV",
+    "power_on_drag": r"data/power_on_drag.CSV",
+    "nose_length": (36.4999*2.54/100, 0.001),
+    "nose_kind": "von karman",
+    "nose_distance_to_cm": (#measure, 0.001),
+    "fin_span": (7*2.54/100, 0.0005),
+    "fin_root_chord": (12*2.54/100, 0.0005),
+    "fin_tip_chord": (4*2.54/100, 0.0005),
+    "fin_distance_to_cm": (#measure, 0.001),
+    # Launch Details
+    "inclination": (84, 1),
+    "heading": (133, 2),
+    "rail_length": (5.18, 0.0005),
+    # Parachute Details
+    "cd_s_drogue": #measure, 0.07),
+    "lag_rec": (#measure, 0.5),
+    # Electronic Systems Details
+    "lag_se": (#estimate, 0.16),
+}
